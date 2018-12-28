@@ -10,6 +10,7 @@ Una placa base (o placa madre, motherboard, mainboard) es la tarjeta de circuito
 
 ![placa real]()
 ![esquema placa]()
+![placa real+nombres]()
 
 **Montaje de los componentes de una placa base**
 
@@ -32,6 +33,8 @@ Alimenta tanto la placa base como los periféricos. Potencia: 250w a 1000w.
 
 Los zócalos para micros con un número grande de pines suelen ser del tipo PGA-ZIF (pin grid array - zero-insertion force) o LGA (land grid array), que hacen uso de una pequeña palanca (PGA-ZIF) o una pequeña placa de metal (LGA) para fijar el micro al zócalo. De esta forma, se minimiza el riesgo de que se doble alguna patilla durante el proceso de inserción.
 
+## Microprocesadores
+
 **Interl Xeon**: Son los procesadores de Intel para servidores.
 
 Incorporan más soporte para multiprocesamiento, más memoria caché, mayor número de "tecnologías" y mejores prestaciones, en general, que los procesadores para equipos de sobremesa de la misma generación.
@@ -45,13 +48,15 @@ El primer Opteron, presentado en 2003, fue el primer procesador con el conjunto 
 
 **IBM POWER**: Performance Optimization With Enhanced RISC. Resultado del trabajo conjunto entre Apple, IBM y Motorola para servidores de gama alta.
 
+## Tecnologías de Memoria
+
 **Ranuras para la memoria DRAM**: (Dynamic Random Access Memory), son los conectores en los que se insertan los módulos de memoria principal: R/W, volátil, necesitan refresco, velocidad inferior a SRAM (caché) pero mayor densidad.
 
 **Canales y bancos de memoria DRAM**: Estas ranuras están agrupadas en canales de memoria (memory channels) a los que la CPU puede acceder en paralelo, pudiendo conectarse varios módulos de memoria en cada canal (bancos).
 
 **Rangos de una memoria DRAM**: Cada módulo de memoria está, a su vez, distribuido en rangos de  memoria que no son más que agrupaciones de chips que me  proporcionan una palabra completa de 64 bits (72 bits en caso de  memorias ECC). En el caso de un módulo de un solo rango (single  rank) todos los chips de memoria del módulo se asocian para dar una  palabra de 64 bits (72 si ECC). Notación: 1Rx4 : Módulo de 1 rango con chips de 4 bits (64/4=16chips)
 
-**Almacenamiento permanente**
+## Almacenamiento
 
   - **Discos duros (HDD, Hard Disk Drives)**: Almacenamiento a lo largo de la superficie de unos discos recubiertos de material magnético. Escritura permanente (no volátil). La lectura y escritura se realiza a través de unos cabezales magnéticos controlados por un brazo motor y la ayuda del giro de los discos. Los datos se distribuyen en pistas. Cada pista se subdivide en sectores de 512 bytes. Los sectores se agrupan en clusters lógicos. Tiempos de respuesta (latencias) muy variables: dependen del sector concreto donde esté el cabezal y el sector concreto al que se quiere acceder. Velocidades de rotación más habituales (r.p.m.): 5400, 7200, 10000, 15000.
 
@@ -64,6 +69,8 @@ El primer Opteron, presentado en 2003, fue el primer procesador con el conjunto 
   - **Unidades ópticas**: Almacenan la información de forma permanente (no volátil) a través de una serie de surcos en un disco que pueden ser leídos por un haz de luz láser. Los discos compactos (CD), discos versátiles digitales (DVD) y discos Blu-ray (BD) son los tipos de medios ópticos más comunes que pueden ser leídos y grabados por estas unidades.
 
   - **Unidades de cinta**: Almacenan la información de forma permanente (no volátil) a través de una cinta recubierta de material magnético. Las latencias suelen ser muy altas ya que hay que rebobinar la cinta hasta que el cabezal se encuentre en la posición deseada. Es el medio con la mayor densidad de bits para un área dada. Actualmente, permiten almacenamiento de decenas de TB por cinta y velocidades de lectura secuencial en torno a 150 MBps. Es el medio de almacenamiento masivo más barato. Se usan normalmente como almacenamiento de respaldo (backup) y archivado.
+
+# E/S
 
   - **Interfaz P-ATA (ATA paralelo)**: ATA: Advanced Technology Attachment Conector IDE: 40 patillas IDE: Integrated Device Electronics Bus PARALELO: bus datos 16b; Half-duplex. 2 dispositivos por conector (maestro / esclavo). Versiones ATA: ATA33, ATA66, ATA100, ATA133 Velocidad de transferencia (máxima): 33, 66, 100, 133MBps. Distancia máxima: 45.7cm
 
