@@ -50,7 +50,8 @@ Un sistema informático no es “bueno” ni “malo” per se, sino que se adap
   - **Periodo de Muestreo** (Sampling Time): ¿Cada cuánto tiempo tomamos la medida? (monitores por muestreo)
   - **Anchura de Entrada** (Input Width): ¿Cuánta información (no de bytes de datos) se almacena por cada medida que toma el monitor?
   - **Sobrecarga (Overhead)**: ¿Qué recursos le “roba” el monitor al sistema? El instrumento de medida puede perturbar el funcionamiento del sistema.
-  $x-y$
+
+  $x^2= y$
 
   ```
   $x-y$
