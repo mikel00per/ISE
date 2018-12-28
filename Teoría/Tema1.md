@@ -55,8 +55,76 @@ Según su uso, un sistema informático puede considerarse:
 
 **Requisitos funcionales**
 
-  - **Prestaciones (Performance)**: Medida o cuantificación de la velocidad con que se realiza una determinada cantidad de trabajo (carga, workload/load). El servidor que realiza la misma cantidad de trabajo (carga) en el menor tiempo es el que mejor prestaciones tiene. Magnitudes medibles implican índices de prestaciones. Tiempo que tarda un componente o el sistema en realizar una tarea. Número de trabajos realizados por algún componente o por el sistema completo por unidad de tiempo. Medidas fundamentales de prestaciones de un servidor:
+  1. **Prestaciones (Performance)**: Medida o cuantificación de la velocidad con que se realiza una determinada cantidad de trabajo (carga, workload/load). El servidor que realiza la misma cantidad de trabajo (carga) en el menor tiempo es el que mejor prestaciones tiene. Magnitudes medibles implican índices de prestaciones. Tiempo que tarda un componente o el sistema en realizar una tarea. Número de trabajos realizados por algún componente o por el sistema completo por unidad de tiempo. Medidas fundamentales de prestaciones de un servidor:
     - **Tiempo de respuesta (response time) o latencia (latency)**: Tiempo total desde que se solicita una tarea al servidor o a un componente del mismo y la finalización de la misma. Por ejemplo: Tiempo de ejecución de un programa o tiempo de acceso a un disco.
     - **Productividad (throughput) o ancho de banda (bandwidth)**: Cantidad de trabajo realizado por el servidor o por un componente del mismo por unidad de tiempo. Por ejemplo: Programas ejecutados por hora, páginas por hora servidas por un servidor web, correos por segundo procesados por un servidor de correo...
-  - **Disponibilidad (Availability)**: Un servidor está disponible si se encuentra en estado operativo. Tiempo de inactividad (Downtime): cantidad de tiempo en el que
-el sistema no está disponible.
+
+  2. **Disponibilidad (Availability)**: Un servidor está disponible si se encuentra en estado operativo. Tiempo de inactividad (Downtime): cantidad de tiempo en el que el sistema no está disponible.
+    - **Tiempo de inactividad planificado**: Es usualmente el resultado de un evento lógico o de gestión iniciado.
+    - **Tiempo de inactividad no planificado**: Surgen de algún evento físico tales como fallos en el hardware, anomalías ambientales o fallos software -> tolerancia a fallos.
+    - Algunas soluciones para aumentar la disponibilidad:, Sistemas redundantes de alimentación, Configuraciones RAID, Sistemas de red redundantes, Sistemas distribuidos, Reemplazo en caliente de componentes (hot-swap).
+
+  3. **Fiabilidad (Reliability)**: Un sistema es fiable cuando desarrolla su actividad sin presencia de errores. MTTF (Mean Time To Failure): tiempo medio que tiene un sistema (disco, memoria, etc.) hasta que ocurre un error.
+    - **Soluciones**: uso de sumas de comprobación (checksums, bit de paridad) para detección y/o corrección de errores (memorias ECC, Error Correcting Code), comprobación de recepción de paquetes de red y su correspondiente retransmisión.
+
+  4. **Seguridad**: Un servidor debe ser seguro ante: La incursión de individuos no autorizados (**confidencialidad**). La corrupción o alteración no autorizada de datos (**integridad**). Las interferencias (**ataques**) que impidan el acceso a los recursos.
+    - **Soluciones**: Autenticación segura de usuarios. Encriptación de datos. Cortafuegos (firewalls) Mecanismos de prevención de ataques de denegación de servicio.
+
+  5. **Extensibilidad-expansibilidad**: Hace referencia a la facilidad que ofrece el sistema para aumentar sus características o recursos.
+  - **Soluciones**: Tener bahías libres para poder añadir más almacenamiento, memoria, etc. Uso de Sistemas Operativos modulares de código abierto (para extender la capacidad del S.O.) Uso de interfaces de E/S estándar (para facilitar la incorporación de más dispositivos al sistema).
+
+  6. **Escalabilidad**: Un servidor es escalable si sus prestaciones pueden aumentar significativamente ante un incremento significativo en su carga.
+    - **Soluciones**: Distribución de carga. Cloud computing. Virtualización. Servidores modulares /clusters. Arquitecturas distribuidas /arquitecturas por capas.
+  **Todos los sistemas escalables son extensibles pero no a la inversa.**
+
+  7. **Mantenimiento**: Hace referencia a todas las acciones que tienen como objetivo prolongar el funcionamiento correcto del sistema. Es importante que el servidor sea fácil de mantener. Por ejemplo: Sistema operativo actualizado. Drivers actualizados. Chequeo periódico de componentes. Garantía de componentes. Copias de seguridad (backup).
+
+  8. **Coste**: Un diseño que sea asequible y se ajuste al presupuesto.
+  9. **Eficiencia energética**: Uso eficiente de los recursos computacionales minimizando el coste energético, cuidando el impacto ambiental y observando deberes sociales. **¿Por qué preocuparse por la eficiencia energética?** Reducir costes (consumo potencia servidores + refrigeración). Mayor vida útil de los componentes (temperatura). Preservar el medio ambiente.
+    - **Soluciones**: Ajuste automático del consumo de potencia de los componentes electrónicos según la carga. Free cooling: Utilización de bajas temperaturas exteriores para refrigeración gratuita.
+
+
+## Comparación conjunta entre prestaciones y coste.
+
+**Comparación de prestaciones**
+
+El computador de mejores prestaciones (el más rápido), para un determinado conjunto de programas, será aquel que ejecuta dicho conjunto de programas en el tiempo más corto. ¿Cuántas veces es más rápido un computador que otro? tanto por ciento de mejora conseguimos reemplazamos un computador por otro más rápido?
+
+**Formulas**
+
+Sea t_A : 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    -
