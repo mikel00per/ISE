@@ -51,7 +51,7 @@ Un sistema informático no es “bueno” ni “malo” per se, sino que se adap
   - **Anchura de Entrada** (Input Width): ¿Cuánta información (no de bytes de datos) se almacena por cada medida que toma el monitor?
   - **Sobrecarga (Overhead)**: ¿Qué recursos le “roba” el monitor al sistema? El instrumento de medida puede perturbar el funcionamiento del sistema.
 
-  \[x^2=5\]
+![img](http://latex.codecogs.com/svg.latex?%5Cfrac%7B%5Csigma%7D%7B%5Cmu%7D)
 
   ```
   $x-y$
