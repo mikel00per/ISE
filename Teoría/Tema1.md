@@ -102,8 +102,8 @@ El computador de mejores prestaciones (el más rápido), para un determinado con
   - **Ganancia porcentaje** = (S_B(A) - 1) x 100
 
 **Prestaciones/coste**
-  - Prestaciones: 1 / tA
-  - Mejor prestaciones/coste = PrestacionesA / Coste A (s^(-1)/€)
+  - **Prestaciones**: 1 / tA
+  - **Mejor prestaciones/coste** = PrestacionesA / Coste A (s^(-1)/€)
 
 ## Límites en la mejora del tiempo de repsuesta (Amdahl)
 
