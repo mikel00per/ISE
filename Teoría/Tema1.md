@@ -90,9 +90,10 @@ Según su uso, un sistema informático puede considerarse:
 
 El computador de mejores prestaciones (el más rápido), para un determinado conjunto de programas, será aquel que ejecuta dicho conjunto de programas en el tiempo más corto. ¿Cuántas veces es más rápido un computador que otro? tanto por ciento de mejora conseguimos reemplazamos un computador por otro más rápido?
 
-**Formulas**
+**Tiempos de ejecución mayores/menores**:
 
-Sea t_A : 
+  - Magnitud: tA es tA / tB veces tB, si es uno es porque son iguales.
+  - Tanto por ciento: \Delta t_{A,B}(\%) = \left ( \frac{t_A}{t_B} -1 \right ) \times 100
 
 
 
