@@ -111,7 +111,7 @@ La mejora del tiempo de respuesta (en nuestro caso, tiempo de ejecución de un p
 
 **Planteamiento:**
 
-Un sistema tarda un tiempo T_original en ejecutar un programa monohebra (=no hay acceso simultáneo a dos o más recursos del sistema). Mejoramos el sistema reemplazando uno de sus componentes por otro k veces más rápido. Este componente se utilizaba durante una fracción f del tiempo T_original .
+Un sistema tarda un tiempo T_original en ejecutar un programa monohebra (=no hay acceso simultáneo a dos o más recursos del sistema). Mejoramos el sistema reemplazando uno de sus componentes por otro k veces más rápido. Este componente se utilizaba durante una fracción f del tiempo T_original.
 
   - **Ley de Amdahl**: S = 1 / 1 - f + (f / k)
     - **Si f = 0** -> S=1 no hay mejora
