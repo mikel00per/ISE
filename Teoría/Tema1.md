@@ -95,7 +95,7 @@ El computador de mejores prestaciones (el más rápido), para un determinado con
   - Magnitud: tA es tA / tB veces tB, si es uno es porque son iguales.
   - Tanto por ciento:
 
-  $\Delta t_{A,B}(\%) = \left ( \frac{t_A}{t_B} -1 \right ) \times 100$
+  $$ \Delta t_{A,B}(\%) = \left ( \frac{t_A}{t_B} -1 \right ) \times 100 $$
 
 
 
