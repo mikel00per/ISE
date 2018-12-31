@@ -99,12 +99,29 @@ Cada programa del benchmark se ejecuta 3 veces y se escoge el resultado intermed
 
 El rendimiento es una variable multidimensional. Habría de expresarse mediante múltiples índices. Sin embargo, las comparaciones son más sencillas si se usa un único índice de rendimiento (a minimizar o maximizar). ¿Cómo concentrar todos los índices en uno solo? Utilizar la mejor variable que represente el rendimiento. Método habitual de síntesis: uso de algún tipo de media.
 
+  - **Media Aritmética**
+    - **Normal**: La máquina más rápida (la que ejecuta los programas del benchmark en menor tiempo) es la de menor media aritmética de los tiempos de ejecución.
+    - **Ponderada**: pesos para cada valor según su importancia. Según este criterio, la máquina “más rápida” sería la de mejor tiempo medio ponderado de ejecución. Nótese que esta ponderación depende, en este ejemplo, de la máquina de referencia.
+  - **Media geométrica**: cuando las medidas son ganancias en velocidad (speedups) con respecto a una máquina de referencia, este índice mantiene el mismo orden en las comparaciones independientemente de la máquina de referencia elegida. Usado en los benchmarks de SPEC y SYSMARK. Se premian las mejoras sustanciales. No se castigan empeoramientos no tan sustanciales. Debemos ser MUY cuidadosos con las comparaciones y saber qué estamos haciendo realmente.
+
+
+Intentar reducir un conjunto de medidas de un benchmark a un solo “valor medio” final no es una tarea trivial. La media aritmética de los tiempos de ejecución de un benchmark es una medida fácilmente interpretable e independiente de ninguna máquina de referencia. El menor valor nos indica la máquina que ha ejecutado el conjunto de programas del benchmark en un tiempo menor. La media aritmética ponderada nos permite asignar más peso a algunos programas que a otros. Esa ponderación debería realizarse, idealmente, según las necesidades del usuario. Si se hace de forma dependiente de los tiempos de ejecución de una máquina de referencia, la elección de ésta puede influir significativamente en los resultados. La media geométrica de las ganancias en velocidad con respecto a una máquina de referencia es un índice de interpretación compleja cuya comparación no depende de la máquina de referencia. Premia mejoras sustanciales con respecto a algún programa del benchmark y no castiga al mismo nivel los empeoramientos. Independientemente de qué índice se escoja, un buen ingeniero debería, en primer lugar, determinar si las diferencias entre las diferentes medidas obtenidas son estadísticamente significativas. ¿Qué significa eso?
 
 
 
+## Introducción al diseño de experimentos
 
+  - Variable respuesta o dependiente (métrica): El índice de rendimiento que usamos para las comparaciones. P.ej. tiempos de respuesta (R), productividades (X).
+  - Factor: Cada una de las variables que pueden afectar a la variable respuesta. P.ej. sistema operativo, tamaño de memoria, tipo de disco
+  duro, tipo de procesador, número de microprocesadores, número de cores, tamaño de cada caché, compilador, algún parámetro configurable del S.O., etc.
+  - Nivel: Cada uno de los valores que puede asumir un factor. P.ej. para un S.O.: Windows, CentOS, Debian, Ubuntu; para un tipo de disco duro: SATA, IDE, SAS; para un parámetro del sistema operativo: ON, OFF, etc.
+  - Interacción: El efecto de un determinado nivel de un factor sobre la variable respuesta puede ser diferente para cada nivel de otro factor. P.ej. el hecho de usar un tipo determinado de S.O. puede afectar a cómo de importante sea usar una mayor cantidad de memoria RAM.
 
+**Tipos de diseños experimentales**
 
+  - **Diseños con un solo factor**: Se utiliza una configuración determinada como base y se estudia un factor cada vez, midiendo los resultados para cada uno de sus niveles. Problema: solo válida si descartamos que haya interacción entre factores. (Test ANOVA)
+  - **Diseños multi-factoriales completos**: Se prueba cada posible combinación de niveles para todos los factores. Ventaja: se analizan las interacciones entre todos los factores.
+  - **Diseños multi-factoriales fraccionados**: Término medio entre los anteriores. No todas las interacciones se verán reflejadas en los resultados, solo las de las interacciones que se consideren más probables.
 
 
 
